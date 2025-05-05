@@ -1,0 +1,303 @@
+git remote add origin https://github.com/maqboolAhmed356/my-second-commit.git<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Conversion Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-100 via-teal-100 to-green-100 flex items-center justify-center p-4">
+    <div class="max-w-6xl w-full bg-white rounded-2xl shadow-xl p-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">File Conversion Dashboard</h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Audio Converter -->
+            <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition">
+                <div class="flex items-center mb-2">
+                    <svg class="w-6 h-6 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    </svg>
+                    <h2 class="text-lg font-semibold text-gray-700">Audio Converter</h2>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">A versatile online audio converter to convert audio files in the most common formats.</p>
+                <input type="file" id="audioInput" accept=".mp3,.wav,.aac,.flac,.ogg,.wma,.m4a,.aiff" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 mb-2">
+                <select id="audioSelect" class="w-full p-2 rounded border-gray-300 focus:ring-2 focus:ring-blue-500 mb-2">
+                    <option>Select target format...</option>
+                    <option value="mp3">MP3</option>
+                    <option value="wav">WAV</option>
+                    <option value="aac">AAC</option>
+                    <option value="flac">FLAC</option>
+                    <option value="ogg">OGG</option>
+                    <option value="wma">WMA</option>
+                    <option value="m4a">M4A</option>
+                    <option value="aiff">AIFF</option>
+                </select>
+                <button id="audioDownload" class="w-full bg-blue-500 text-white py-2 rounded-full hover:bg-blue-600 transition hidden">Download Converted File</button>
+            </div>
+
+            <!-- Document Converter -->
+            <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition">
+                <div class="flex items-center mb-2">
+                    <svg class="w-6 h-6 text-green-500 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm-2 16H8v-2h4v2zm0-4H8v-2h4v2zm-2-4V4l4 4H10z"/>
+                    </svg>
+                    <h2 class="text-lg font-semibold text-gray-700">Document Converter</h2>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">Our free document converter allows you to convert Word to PDF, JPG to any format.</p>
+                <input type="file" id="docInput" accept=".pdf,.docx,.odt,.rtf,.txt,.html,.epub,.md" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-green-50 file:text-green-700 hover:file:bg-green-100 mb-2">
+                <select id="docSelect" class="w-full p-2 rounded border-gray-300 focus:ring-2 focus:ring-green-500 mb-2">
+                    <option>Select target format...</option>
+                    <option value="pdf">PDF</option>
+                    <option value="docx">DOCX</option>
+                    <option value="odt">ODT</option>
+                    <option value="rtf">RTF</option>
+                    <option value="txt">TXT</option>
+                    <option value="html">HTML</option>
+                    <option value="epub">EPUB</option>
+                    <option value="md">Markdown</option>
+                </select>
+                <button id="docDownload" class="w-full bg-green-500 text-white py-2 rounded-full hover:bg-green-600 transition hidden">Download Converted File</button>
+            </div>
+
+            <!-- Web Service Converter -->
+            <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition">
+                <div class="flex items-center mb-2">
+                    <svg class="w-6 h-6 text-purple-500 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17h-2v-2h2v2zm0-4h-2V7h2v8z"/>
+                    </svg>
+                    <h2 class="text-lg font-semibold text-gray-700">Web Service Converter</h2>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">Convert online files for Facebook, Twitter, and many other services.</p>
+                <input type="file" id="webInput" accept=".mp4,.gif,.jpg,.mp3,.pdf,.png,.avi" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-purple-50 file:text-purple-700 hover:file:bg-purple-100 mb-2">
+                <select id="webSelect" class="w-full p-2 rounded border-gray-300 focus:ring-2 focus:ring-purple-500 mb-2">
+                    <option>Select target service...</option>
+                    <option value="fb">Facebook MP4</option>
+                    <option value="tw">Twitter GIF</option>
+                    <option value="ig">Instagram JPG</option>
+                    <option value="yt">YouTube MP3</option>
+                    <option value="ln">LinkedIn PDF</option>
+                    <option value="pi">Pinterest PNG</option>
+                    <option value="tk">TikTok MP4</option>
+                    <option value="sc">Snapchat AVI</option>
+                </select>
+                <button id="webDownload" class="w-full bg-purple-500 text-white py-2 rounded-full hover:bg-purple-600 transition hidden">Download Converted File</button>
+            </div>
+
+            <!-- Software Converter -->
+            <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition">
+                <div class="flex items-center mb-2">
+                    <svg class="w-6 h-6 text-red-500 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H7v-2h8v2zm3-4H6v-2h12v2zm0-4H6V6h12v4z"/>
+                    </svg>
+                    <h2 class="text-lg font-semibold text-gray-700">Software Converter</h2>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">Convert your files from PDF to Word, PDF to Excel, and more.</p>
+                <input type="file" id="softInput" accept=".pdf,.docx,.xlsx,.pptx" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-700 hover:file:bg-red-100 mb-2">
+                <select id="softSelect" class="w-full p-2 rounded border-gray-300 focus:ring-2 focus:ring-red-500 mb-2">
+                    <option>Select target software...</option>
+                    <option value="word">Microsoft Word</option>
+                    <option value="excel">Microsoft Excel</option>
+                    <option value="powerpoint">Microsoft PowerPoint</option>
+                    <option value="pages">Apple Pages</option>
+                    <option value="numbers">Apple Numbers</option>
+                    <option value="keynote">Apple Keynote</option>
+                    <option value="libre">LibreOffice</option>
+                    <option value="google">Google Docs</option>
+                </select>
+                <button id="softDownload" class="w-full bg-red-500 text-white py-2 rounded-full hover:bg-red-600 transition hidden">Download Converted File</button>
+            </div>
+
+            <!-- Video Converter -->
+            <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition">
+                <div class="flex items-center mb-2">
+                    <svg class="w-6 h-6 text-yellow-500 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                    </svg>
+                    <h2 class="text-lg font-semibold text-gray-700">Video Converter</h2>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">Convert video files into the most common formats, such as MP4, AVI, MOV, and more.</p>
+                <input type="file" id="videoInput" accept=".mp4,.avi,.mov,.wmv,.flv,.mkv,.webm,.3gp" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-yellow-50 file:text-yellow-700 hover:file:bg-yellow-100 mb-2">
+                <select id="videoSelect" class="w-full p-2 rounded border-gray-300 focus:ring-2 focus:ring-yellow-500 mb-2">
+                    <option>Select target format...</option>
+                    <option value="mp4">MP4</option>
+                    <option value="avi">AVI</option>
+                    <option value="mov">MOV</option>
+                    <option value="wmv">WMV</option>
+                    <option value="flv">FLV</option>
+                    <option value="mkv">MKV</option>
+                    <option value="webm">WEBM</option>
+                    <option value="3gp">3GP</option>
+                </select>
+                <button id="videoDownload" class="w-full bg-yellow-500 text-white py-2 rounded-full hover:bg-yellow-600 transition hidden">Download Converted File</button>
+            </div>
+
+            <!-- eBook Converter -->
+            <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition">
+                <div class="flex items-center mb-2">
+                    <svg class="w-6 h-6 text-indigo-500 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18 2H6c-1.1 0-2 .9-2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-6 4h5v3h-5V6zm0 4h5v3h-5v-3zm0 4h5v3h-5zM6 18V4h5v16H6z"/>
+                    </svg>
+                    <h2 class="text-lg font-semibold text-gray-700">eBook Converter</h2>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">A list of versatile online eBook converters that can convert your text documents to eBook easily.</p>
+                <input type="file" id="ebookInput" accept=".epub,.mobi,.azw3,.pdf,.fb2,.lit,.lrf,.txt" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100 mb-2">
+                <select id="ebookSelect" class="w-full p-2 rounded border-gray-300 focus:ring-2 focus:ring-indigo-500 mb-2">
+                    <option>Select target format...</option>
+                    <option value="epub">EPUB</option>
+                    <option value="mobi">MOBI</option>
+                    <option value="azw3">AZW3</option>
+                    <option value="pdf">PDF</option>
+                    <option value="fb2">FB2</option>
+                    <option value="lit">LIT</option>
+                    <option value="lrf">LRF</option>
+                    <option value="txt">TXT</option>
+                </select>
+                <button id="ebookDownload" class="w-full bg-indigo-500 text-white py-2 rounded-full hover:bg-indigo-600 transition hidden">Download Converted File</button>
+            </div>
+
+            <!-- Device Converter -->
+            <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition">
+                <div class="flex items-center mb-2">
+                    <svg class="w-6 h-6 text-pink-500 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 15c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+                    </svg>
+                    <h2 class="text-lg font-semibold text-gray-700">Device Converter</h2>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">A collection of online video converters for tablet, mobile device, gaming console or other.</p>
+                <input type="file" id="deviceInput" accept=".mp4,.mov,.avi,.wmv" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-pink-50 file:text-pink-700 hover:file:bg-pink-100 mb-2">
+                <select id="deviceSelect" class="w-full p-2 rounded border-gray-300 focus:ring-2 focus:ring-pink-500 mb-2">
+                    <option>Select target device...</option>
+                    <option value="iphone">iPhone MP4</option>
+                    <option value="android">Android MP4</option>
+                    <option value="ipad">iPad MOV</option>
+                    <option value="ps5">PS5 MP4</option>
+                    <option value="xbox">Xbox AVI</option>
+                    <option value="switch">Nintendo Switch MP4</option>
+                    <option value="kindle">Kindle MOBI</option>
+                    <option value="pc">PC WMV</option>
+                </select>
+                <button id="deviceDownload" class="w-full bg-pink-500 text-white py-2 rounded-full hover:bg-pink-600 transition hidden">Download Converted File</button>
+            </div>
+
+            <!-- Hash Generator -->
+            <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition">
+                <div class="flex items-center mb-2">
+                    <svg class="w-6 h-6 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V6h5.17l2 2H20v10z"/>
+                    </svg>
+                    <h2 class="text-lg font-semibold text-gray-700">Hash Generator</h2>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">Generate a hash or checksum with these hash generator tools.</p>
+                <input type="file" id="hashInput" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-orange-50 file:text-orange-700 hover:file:bg-orange-100 mb-2">
+                <select id="hashSelect" class="w-full p-2 rounded border-gray-300 focus:ring-2 focus:ring-orange-500 mb-2">
+                    <option>Select target format...</option>
+                    <option value="md5">MD5</option>
+                    <option value="sha1">SHA-1</option>
+                    <option value="sha256">SHA-256</option>
+                    <option value="sha512">SHA-512</option>
+                    <option value="crc32">CRC32</option>
+                    <option value="ripemd160">RIPEMD-160</option>
+                    <option value="whirlpool">Whirlpool</option>
+                    <option value="tiger">Tiger</option>
+                </select>
+                <button id="hashDownload" class="w-full bg-orange-500 text-white py-2 rounded-full hover:bg-orange-600 transition hidden">Download Converted File</button>
+            </div>
+
+            <!-- Image Converter -->
+            <div class="bg-gray-50 p-4 rounded-lg shadow hover:shadow-lg transition">
+                <div class="flex items-center mb-2">
+                    <svg class="w-6 h-6 text-teal-500 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 11l4 6H5l3.5-4.5z"/>
+                    </svg>
+                    <h2 class="text-lg font-semibold text-gray-700">Image Converter</h2>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">Image converter allows you to convert image files, for example a PDF to image.</p>
+                <input type="file" id="imageInput" accept=".png,.jpg,.jpeg,.gif,.bmp,.tiff,.webp,.svg" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-teal-50 file:text-teal-700 hover:file:bg-teal-100 mb-2">
+                <select id="imageSelect" class="w-full p-2 rounded border-gray-300 focus:ring-2 focus:ring-teal-500 mb-2">
+                    <option>Select target format...</option>
+                    <option value="png">PNG</option>
+                    <option value="jpg">JPG</option>
+                    <option value="jpeg">JPEG</option>
+                    <option value="gif">GIF</option>
+                    <option value="bmp">BMP</option>
+                    <option value="tiff">TIFF</option>
+                    <option value="webp">WEBP</option>
+                    <option value="svg">SVG</option>
+                </select>
+                <button id="imageDownload" class="w-full bg-teal-500 text-white py-2 rounded-full hover:bg-teal-600 transition hidden">Download Converted File</button>
+            </div>
+        </div>
+
+        <!-- Download All Button -->
+        <div class="mt-6 text-center">
+            <button id="downloadAllBtn" class="bg-gray-500 text-white py-2 px-6 rounded-full hover:bg-gray-600 transition hidden">Download All Converted Files</button>
+        </div>
+    </div>
+
+    <script>
+        let convertedFiles = [];
+
+        // Function to handle download button visibility and functionality
+        function setupConverter(inputId, selectId, downloadId, category) {
+            const input = document.getElementById(inputId);
+            const select = document.getElementById(selectId);
+            const downloadBtn = document.getElementById(downloadId);
+
+            function checkConditions() {
+                const hasFile = input.files.length > 0;
+                const hasFormat = select.value !== "Select target format..." && select.value !== "Select target service..." && select.value !== "Select target software..." && select.value !== "Select target device...";
+                downloadBtn.classList.toggle("hidden", !(hasFile && hasFormat));
+                updateDownloadAllVisibility();
+            }
+
+            input.addEventListener("change", checkConditions);
+            select.addEventListener("change", checkConditions);
+
+            downloadBtn.addEventListener("click", () => {
+                const file = input.files[0];
+                const targetFormat = select.value;
+                const newFileName = `${file.name.split('.')[0]}_converted_${category}.${targetFormat}`;
+                const dummyContent = `This is a simulated ${category} file converted to ${targetFormat}.`;
+                const blob = new Blob([dummyContent], { type: "text/plain" });
+                const url = URL.createObjectURL(blob);
+                convertedFiles.push({ url, name: newFileName });
+                const link = document.createElement("a");
+                link.href = url;
+                link.download = newFileName;
+                link.click();
+                URL.revokeObjectURL(url);
+            });
+        }
+
+        // Setup for each converter
+        setupConverter("audioInput", "audioSelect", "audioDownload", "audio");
+        setupConverter("docInput", "docSelect", "docDownload", "document");
+        setupConverter("webInput", "webSelect", "webDownload", "web");
+        setupConverter("softInput", "softSelect", "softDownload", "software");
+        setupConverter("videoInput", "videoSelect", "videoDownload", "video");
+        setupConverter("ebookInput", "ebookSelect", "ebookDownload", "ebook");
+        setupConverter("deviceInput", "deviceSelect", "deviceDownload", "device");
+        setupConverter("hashInput", "hashSelect", "hashDownload", "hash");
+        setupConverter("imageInput", "imageSelect", "imageDownload", "image");
+
+        // Update Download All button visibility
+        function updateDownloadAllVisibility() {
+            const downloadAllBtn = document.getElementById("downloadAllBtn");
+            downloadAllBtn.classList.toggle("hidden", convertedFiles.length === 0);
+        }
+
+        // Handle Download All button
+        document.getElementById("downloadAllBtn").addEventListener("click", () => {
+            convertedFiles.forEach(file => {
+                const link = document.createElement("a");
+                link.href = file.url;
+                link.download = file.name;
+                link.click();
+                URL.revokeObjectURL(file.url); // Clean up
+            });
+            convertedFiles = []; // Clear after download
+            updateDownloadAllVisibility();
+        });
+    </script>
+</body>
+</html>
